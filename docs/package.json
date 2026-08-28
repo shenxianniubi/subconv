@@ -1,0 +1,13 @@
+{
+  "name": "subconv-docs",
+  "type": "module",
+  "packageManager": "bun@1.3.11",
+  "scripts": {
+    "dev": "bunx --bun vitepress dev",
+    "build": "bunx --bun vitepress build",
+    "preview": "bunx --bun vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.32"
+  }
+}

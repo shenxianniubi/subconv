@@ -1,0 +1,14 @@
+__pycache__/
+.venv/
+.vscode/
+.vercel
+test.py
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+dist/
+static/
+config.yaml
+.omx/
+.sisyphus/
+.DS_Store

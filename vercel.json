@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "mainpage/package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/robots.txt(.*)",
+      "dest": "/api.py"
+    },
+    {
+      "src": "/sub(.*)",
+      "dest": "/api.py"
+    },
+    {
+      "src": "/provider(.*)",
+      "dest": "/api.py"
+    },
+    {
+      "src": "/proxy(.*)",
+      "dest": "/api.py"
+    },
+    {
+      "src": "/config(.*)",
+      "dest": "/api.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/mainpage/$1"
+    }
+  ]
+}

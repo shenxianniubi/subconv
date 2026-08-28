@@ -1,0 +1,19 @@
+[project]
+name = "subconv"
+version = "2.0.0"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi==0.136.0",
+    "httpx==0.28.1",
+    "pydantic-settings>=2.14.0",
+    "pyyaml>=6.0.3",
+    "uvicorn==0.44.0",
+]
+
+[dependency-groups]
+build = [
+    "nuitka[onefile]",
+]
+
+[tool.uv]
+package = false
